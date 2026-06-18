@@ -8,8 +8,8 @@ repos:
     rev: 1.7.9
     hooks:
       - id: bandit
-        args: ["-c", "useful_python/pyproject.toml"]
-        files: useful_python/
+        args: ["-c", "pyproject.toml"]
+        files: .
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
