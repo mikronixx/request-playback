@@ -33,8 +33,8 @@ jobs:
 
       - name: Run ruff
         run: ruff check .
-        working-directory: useful_python
+        working-directory: .
 
       - name: Run bandit
         run: bandit -r -c pyproject.toml .
-        working-directory: useful_python
+        working-directory: .
