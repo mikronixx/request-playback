@@ -38,6 +38,6 @@ jobs:
         run: 'pip install --require-hashes --only-binary :all: -r requirements-pre-commit.txt'
 
       - name: Run hooks
-        run: make test
+        run: pre-commit run --all-files --show-diff-on-failure
         env:
           SKIP: gitleaks,lychee,pytest-http-requests,mypy-http-requests
